@@ -27,7 +27,7 @@ function Signup(){
     }
 
     const addsignup = () => {
-        var Signupdetails = axios.post("http://localhost:5000/signup",{"username":sname,"password":spword,"confirmpassword":scpword})
+        var Signupdetails = axios.post("https://login-react-backend.onrender.com/signup",{"username":sname,"password":spword,"confirmpassword":scpword})
         alert("register successfull")   
         navigate('/')
         

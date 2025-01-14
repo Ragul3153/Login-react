@@ -17,7 +17,7 @@ const handlepword = (event) => {
 }
 
 const check = () => {
-  var logindetails = axios.post("http://localhost:5000/login",{"username":uname,"password":pword})
+  var logindetails = axios.post("https://login-react-backend.onrender.com/login",{"username":uname,"password":pword})
   console.log(logindetails);
   
   logindetails.then(function(data){
